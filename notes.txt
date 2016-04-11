@@ -1,2 +1,3 @@
 
-docker build --tag=floe/shiny-custom --rm=true .
+docker build --tag=floe/shiny-custom:`date +%Y-%m-%d` --rm=true .
+docker tag floe/shiny-custom:`date +%Y-%m-%d` floe/shiny-custom:latest
