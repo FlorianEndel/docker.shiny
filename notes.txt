@@ -1,0 +1,2 @@
+
+docker build --tag=floe/shiny-custom --rm=true .
