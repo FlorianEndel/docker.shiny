@@ -18,7 +18,9 @@ RUN DEBIAN_FRONTEND=noninteractive \
     # general tools
     htop debhelper git \ 
   && apt-get autoclean \ 
-  && rm -rf /var/lib/apt/lists/*
+  && rm -rf /var/lib/apt/lists/* \
+  \
+  && mkdir /srv/shiny-server/log
 
   # syntax highlighting: python-pygments
 
