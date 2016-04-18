@@ -1,3 +1,6 @@
 
 docker build --tag=floe/shiny-custom:`date +%Y-%m-%d` --pull --rm=true .
 docker tag floe/shiny-custom:`date +%Y-%m-%d` floe/shiny-custom:latest
+
+docker push floe/shiny-custom:latest
+docker push floe/shiny-custom:`date +%Y-%m-%d`
