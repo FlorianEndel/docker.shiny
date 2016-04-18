@@ -18,7 +18,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     # general tools
     htop debhelper git \ 
   && apt-get autoclean \ 
-  && rm -rf /var/lib/apt/lists/* \
+  && rm -rf /var/lib/apt/lists/* 
   
   #&& mkdir /srv/shiny-server/log \
   #&& sed -i 's%var%srv/shiny-server%g' /etc/shiny-server/shiny-server.conf 
