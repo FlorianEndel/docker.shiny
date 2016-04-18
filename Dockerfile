@@ -20,7 +20,8 @@ RUN DEBIAN_FRONTEND=noninteractive \
   && apt-get autoclean \ 
   && rm -rf /var/lib/apt/lists/* \
   \
-  && mkdir /srv/shiny-server/log
+  && mkdir /srv/shiny-server/log \
+  && sed -i 's%var%srv/shiny-server%g' /etc/shiny-server/shiny-server.conf 
 
   # syntax highlighting: python-pygments
 
